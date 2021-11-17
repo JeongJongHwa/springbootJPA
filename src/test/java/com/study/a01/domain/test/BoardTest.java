@@ -28,6 +28,11 @@ public class BoardTest {
 	@LocalServerPort
 	private int port;
 	
+	@Test
+	public void printOut() {
+		System.out.println("test!!");
+	}
+	
 	public void boardInsert () {
 
 		// 게시글 파라매터 생성
