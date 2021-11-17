@@ -28,7 +28,6 @@ public class BoardTest {
 	@LocalServerPort
 	private int port;
 	
-	@Test
 	public void boardInsert () {
 
 		// 게시글 파라매터 생성
@@ -53,7 +52,6 @@ public class BoardTest {
 	}
 	
 	
-	@Test
 	void save() {
 		
 		// 게시글 파라매터 생성
@@ -75,13 +73,11 @@ public class BoardTest {
 		assertThat(entity.getWriter()).isEqualTo("JJH");
 	}
 	
-	@Test
 	void findAll() {
 		long boardsCount = boardRepository.count();
 		List<Board> boards = boardRepository.findAll();
 	}
 	
-	@Test
 	void delete() {
 		Board entity = boardRepository.findById((long) 2).get();
 		
