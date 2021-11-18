@@ -15,8 +15,6 @@ import org.springframework.web.client.RestTemplate;
 import com.study.a01.domain.Board;
 import com.study.a01.repository.BoardRepository;
 
-
-@SpringBootTest
 public class BoardTest {
 
 	@Autowired
