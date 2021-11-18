@@ -10,19 +10,19 @@ import org.springframework.context.annotation.PropertySource;
 import com.zaxxer.hikari.HikariConfig;
 import com.zaxxer.hikari.HikariDataSource;
 
-@Configuration
-@PropertySource("classpath:/application.properties")
-public class DatabaseConfig {
-
-	@Bean
-	@ConfigurationProperties(prefix = "spring.db1.datasource")
-	public HikariConfig hikariConfig() {
-		return new HikariConfig();
-	}
-	
-    @Bean
-    public DataSource dataSource() {
-        return new HikariDataSource(hikariConfig());
-    }
-	
-}
+/*
+ * @Configuration
+ * 
+ * @PropertySource("classpath:/application.properties") public class
+ * DatabaseConfig {
+ * 
+ * @Bean
+ * 
+ * @ConfigurationProperties(prefix = "spring.db1.datasource") public
+ * HikariConfig hikariConfig() { return new HikariConfig(); }
+ * 
+ * @Bean public DataSource dataSource() { return new
+ * HikariDataSource(hikariConfig()); }
+ * 
+ * }
+ */

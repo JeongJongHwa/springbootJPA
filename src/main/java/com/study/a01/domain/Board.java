@@ -19,7 +19,7 @@ public class Board {
 
 		@Id
 		@GeneratedValue(strategy = GenerationType.IDENTITY)
-		private Long id; // PK
+		private long id; // PK
 
 	    private String title; // 제목
 
@@ -31,7 +31,7 @@ public class Board {
 
 	    private char deleteYn; // 삭제 여부
 
-	    private LocalDateTime createdDate = LocalDateTime.now(); // 생성일
+	    private LocalDateTime createDate = LocalDateTime.now(); // 생성일
 
 	    private LocalDateTime modifiedDate; // 수정일
 	    
