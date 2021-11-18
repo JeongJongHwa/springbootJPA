@@ -18,6 +18,11 @@ public class BoardController {
 
 	private final BoardService boardService;
 	
+	@GetMapping("/")
+	public String startStr() {
+		return "Hello!";
+	}
+	
 	@GetMapping("/restApi/select/board/{id}")
 	public Board findById( @PathVariable long id ) throws Exception {
 		return boardService.findById(id);
